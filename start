@@ -1,0 +1,6 @@
+#!/bin/sh
+docker run -t \
+  -v /etc/cups:/opt/cups-data \
+  -v /dev/usb:/dev/usb \
+  -p 80:80 \
+  kennship/raspi-cups
